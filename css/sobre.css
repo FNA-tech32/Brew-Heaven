@@ -1,0 +1,110 @@
+.conteudo-sobre {
+    text-align: center;
+}
+
+.conteudo-sobre {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.sobre-titulo {
+    font-size: 6rem;
+    margin: 90px 0 30px 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 4px 6px #313131;
+}
+
+.sobre-texto {
+   font-size: 1.6rem;
+   line-height: 30px;
+   margin: 10px 0;
+   padding: 0 50px;
+   color: #FFFFFF;
+}
+
+.sobre-imagem {
+    margin-top: 30px;
+    height: 85vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px #313131;
+}
+
+@media screen and (min-width: 200px) and (max-width: 344px) {
+    .conteudo-sobre {
+        width: auto;
+    }
+
+    .sobre-titulo {
+        visibility: hidden;
+        position: relative;
+        margin: 0;
+    }
+
+    .sobre-titulo::after {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "Brew Haven";
+        font-size: 2.8rem;
+    }
+
+    .sobre-texto {
+        padding: 0 4px;
+    }
+
+    .sobre-imagem {
+        height: 40vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 599px) {
+    .conteudo-sobre {
+        width: auto;
+    }
+
+    .sobre-titulo {
+       font-size: 5rem;
+    }
+
+    .sobre-texto {
+        padding: 0 20px;
+    }
+
+    .sobre-imagem {
+        height: 40vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .conteudo-sobre {
+        width: auto;
+    }
+
+    .sobre-texto {
+        padding: 0 10px;
+        font-size: 1.8rem;
+    }
+
+    .sobre-imagem {
+        height: 60vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .conteudo-sobre {
+        width: auto;
+    }
+
+    .sobre-texto {
+        padding: 0 230px;
+    }
+
+    .sobre-imagem {
+        width: 80%;
+    }
+}

@@ -1,0 +1,95 @@
+.conteudo-segredo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.segredo-titulo {
+    font-size: 4rem;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 4px 6px #313131;
+}
+
+.segredo-texto {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    padding: 0 70px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 344px) {
+    .conteudo-segredo {
+        width: auto;
+        text-align: center;
+    }
+
+    .segredo-texto {
+        padding: 0 4px;
+    }
+
+    .segredo-titulo {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .segredo-titulo::after {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        content: "Segredo";
+        font-size: 3rem;
+    }
+
+    .segredo-video {
+        height: 80vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 599px) {
+    .conteudo-segredo {
+        width: auto;
+        text-align: center;
+    }
+
+    .segredo-titulo {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .segredo-titulo::after {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "Segredo";
+    }
+
+    .segredo-texto {
+        padding: 0 20px;
+    }
+
+    .segredo-video {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .conteudo-segredo {
+        width: auto;
+        text-align: center;
+    }
+
+    .segredo-texto {
+        padding: 0 10px;
+    }
+
+    .segredo-video {
+        width: 80%;
+    }
+}

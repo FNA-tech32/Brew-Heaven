@@ -1,0 +1,96 @@
+.conteudo-localizacao {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.localizacao-titulo {
+    font-size: 4rem;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 4px 6px #313131;
+}
+
+.localizacao-texto {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+
+.localizacao-mapa {
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 344px) {
+    .conteudo-localizacao {
+        width: auto;
+        text-align: center;
+    }
+
+    .localizacao-titulo {
+        visibility: hidden;
+        position: relative;
+        margin: 0;
+    }
+
+    .localizacao-titulo::after {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "Mapa";
+        font-size: 3rem;
+    }
+
+    .localizacao-texto {
+        padding: 0 4px;
+    }
+
+    .localizacao-mapa {
+        height: 80vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 599px) {
+    .conteudo-localizacao {
+        width: auto;
+        text-align: center;
+    }
+
+    .localizacao-titulo {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .localizacao-titulo::after {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "Bem-vindos!";
+    }
+
+    .localizacao-mapa {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .conteudo-localizacao {
+        width: auto;
+        text-align: center;
+    }
+
+    .localizacao-texto {
+        padding: 0 14px;
+        font-size: 1.8rem;
+    }
+
+    .localizacao-mapa {
+        width: 80%;
+    }
+}

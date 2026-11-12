@@ -1,0 +1,103 @@
+.cabecalho-conteudo {
+    background-color: #8B4513;
+    padding: 50px;
+}
+
+.cabecalho-logo {
+    width: 15%;
+}
+
+.cabecalho-menu {
+    position: absolute;
+    right: 0;
+}
+
+.cabecalho-item {
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    right: 80px;
+    margin: 0 10px;
+}
+
+.cabecalho-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #FFFFFF;
+    transition: 500ms;
+    text-transform: capitalize;
+}
+
+.cabecalho-link:hover {
+    color: #dd7123;
+    font-size: 2.3rem;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 200px) and (max-width: 344px) {
+    .cabecalho-logo {
+        width: 100%;
+    }
+
+    .cabecalho-menu {
+        position: static;
+        text-align: center;
+    }
+
+    .cabecalho-item {
+        position: static;
+        display: block;
+    }
+
+    .cabecalho-link {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 599px) {
+    .cabecalho-logo {
+        width: 100%;
+        position: static;
+        display: block;
+    }
+
+    .cabecalho-menu {
+        position: static;
+        text-align: center;
+    }
+
+    .cabecalho-item {
+        display: block;
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .cabecalho-conteudo {
+        text-align: center;
+    }
+    
+    .cabecalho-logo {
+        width: auto;
+    }
+
+    .cabecalho-menu {
+        position: static;
+    }
+
+    .cabecalho-item {
+        position: static;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cabecalho-link {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-link:hover {
+        font-size: 2.8rem;
+    }
+}
